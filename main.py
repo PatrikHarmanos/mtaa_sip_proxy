@@ -4,8 +4,7 @@ import logging
 import sipproxy
 
 if __name__ == "__main__":
-    sipproxy.HOST = "192.168.0.164"
-    # sipproxy.HOST = input("Zadajte IP addresu: ")
+    sipproxy.HOST = input("Zadajte IP addresu: ")
     logging.basicConfig(format='%(asctime)s:%(levelname)s:%(message)s', filename='proxy.log', level=logging.INFO,
                         datefmt='%H:%M:%S')
     logging.info(time.strftime("%a, %d %b %Y %H:%M:%S ", time.localtime()))
